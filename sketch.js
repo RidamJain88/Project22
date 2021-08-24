@@ -11,10 +11,10 @@ const Body = Matter.Body;
 
 function preload()
 {
-	starImg = loadImage("images/star.png");
-	bgImg = loadImage("images/starNight.png");
-    fairyImg = loadAnimation("images/fairyImage1.png" , "images/fairyImage2.png") ;
-     joySound = loadSound("sound/JoyMusic.mp3")
+	starImg = loadImage("star.png");
+	bgImg = loadImage("starNight.png");
+    fairyImg = loadAnimation("fairyImage1.png" , "fairyImage2.png") ;
+     joySound = loadSound("JoyMusic.mp3")
 }
 
 function setup() {
@@ -67,7 +67,7 @@ function keyPressed() {
 	
 	if(keyCode === 32 && fairy.x < 520){
 		fairy.x = fairy.x+20
-        //joySound.play() ;
+        joySound.play() ;
 	}
 	 
 	
